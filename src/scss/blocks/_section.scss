@@ -1,0 +1,94 @@
+$color-w: rgba(107, 107, 108, 1);
+$color-g: rgba(54, 55, 56, 1);
+$bc-shadow: rgba(215, 215, 221, 1);
+$color-green: rgba(11, 117, 114, 1);
+$color-orange: rgba(255, 206, 80, 1);
+
+.section {
+    width: 98%;
+    height: 800px;
+    margin-top: 300px;
+    margin-left: 100px;
+
+    .section__card-text {
+        margin-left: 50px;
+        cursor: default;
+    }
+
+    .section__text__h1 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .section__text__span {
+        max-width: 500px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 20px;
+        color: $color-w;
+    }
+
+    .setion__card-contener {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px 30px;
+        margin-top: 56px;
+        margin-left: -70px;
+
+        .section__contener {
+            height: 450px;
+            box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 10px;
+            transition: ease-in 0.3s;
+            
+            &:hover {
+                box-shadow: -10px 15px 20px 3px $color-g;
+            }
+        }
+
+        .section__contener__logo {
+            padding: 24px 32px;
+            font-size: 20px;
+            font-weight: 600;
+            color: $color-g;
+            cursor: default;
+        }
+
+        .section__contener__text {
+            max-width: 300px;
+            line-height: 24px;
+            margin-left: 32px;
+            color: $color-w;
+            margin-bottom: 32px;
+            cursor: default;
+        }
+
+        .section__contener__money {
+            margin-left: 32px;
+            padding-top: 32px;
+            padding: 0 0 5px 0;
+            color: $color-g;
+            border-bottom: 3px solid $color-orange;
+            font-weight: 600;
+            color: $color-g;
+            cursor: pointer;
+            transition: ease-in-out 0.2s;
+
+            &:hover {
+                color: $color-orange;
+                border-bottom: none;
+            }
+
+            &:active {
+                color: rgba(61, 30, 221, 1);
+                border-bottom: none;
+            }
+        }
+
+        .section__contener__img {
+            cursor: zoom-in;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+$color-w: rgba(107, 107, 108, 1);
+$color-g: rgba(54, 55, 56, 1);
+$bc-shadow: rgba(215, 215, 221, 1);
+$color-green: rgba(11, 117, 114, 1);
+$color-orange: rgba(255, 206, 80, 1);
+
+.navbar {
+    width: 1440px;
+    height: 100vh;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        width: 768px;
+    }
+}
+
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/hero";
+@import "./blocks/section";
+@import "./blocks/navigetion";
+@import "./blocks/navigetion";
+@import "./blocks/sec";
+@import "./blocks/frend";
+@import "./blocks/family";
+@import "./blocks/tabel";
+@import "./blocks/foto";

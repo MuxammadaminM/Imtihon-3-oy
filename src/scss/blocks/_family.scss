@@ -1,0 +1,87 @@
+$color-w: rgba(107, 107, 108, 1);
+$color-g: rgba(54, 55, 56, 1);
+$bc-shadow: rgba(215, 215, 221, 1);
+$color-green: rgba(11, 117, 114, 1);
+$color-orange: rgba(255, 206, 80, 1);
+
+.family {
+    width: 100%;
+    height: 900px;
+
+    .family__logo {
+        margin-left: 110px;
+        font-size: 48px;
+        font-weight: 600;
+        color: $color-g;
+        line-height: 60px;
+    }
+
+    .family__cards {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px 30px;
+        flex-wrap: wrap;
+        margin-top: 72px;
+
+        .family__card {
+            width: 550px;
+            height: 210px;
+            border-radius: 10px;
+            border-left: 50px solid $color-green;
+            box-shadow: 1px 1px 10px 5px $bc-shadow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px 50px;
+            flex-wrap: wrap;
+            transition: ease-in 0.2s;
+
+            &:hover {
+                box-shadow: -10px 10px 10px 5px $bc-shadow;
+            }
+
+            &:active {
+                box-shadow: inset -10px 10px 10px 5px $bc-shadow;
+            }
+                 
+            hr {
+                width: 90px;
+                margin-left: 0px;
+                border: 2px solid $color-orange;
+            }
+
+            .family__img {
+                margin-left: -100px;
+            }
+
+            .family__text__logo {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                color: $color-g;
+            }
+
+            .family__text__info {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                color: $color-w;
+                margin-top: 10px;
+            }
+
+            .family__icon-card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px 20px;
+            }
+
+            .family__text__image {
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+$color-w: rgba(107, 107, 108, 1);
+$color-g: rgba(54, 55, 56, 1);
+$bc-shadow: rgba(215, 215, 221, 1);
+
+.navs {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.nav {
+    width: 1240px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 50px;
+    margin-top: -50px;
+    box-shadow: 1px 1px 20px 2px gray;
+    border-radius: 20px;
+
+    .nav__card {
+        width: 350px;
+        height: 305px;
+        padding-left: 64px;
+        cursor: pointer;
+    }
+
+    .nav__card:nth-child(2) {
+        border-left: 1px solid $bc-shadow;
+        
+    }
+
+    .nav__card:nth-child(3) {
+        border-left: 1px solid $bc-shadow;
+    }
+
+    .nav__logo {
+        width: 288px;
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 25px;
+        line-height: 27px;
+    }
+
+    .nav__text {
+        width: 225px;
+        line-height: 24px;
+        color: $color-g;
+        margin-top: 25px;
+    }
+}

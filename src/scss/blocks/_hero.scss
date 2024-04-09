@@ -1,0 +1,94 @@
+$color-w: rgba(107, 107, 108, 1);
+$color-g: rgba(54, 55, 56, 1);
+$bc-shadow: rgba(215, 215, 221, 1);
+$color-green: rgba(11, 117, 114, 1);
+
+.hero {
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 50px;
+
+    img {
+        position: absolute;
+    }
+
+    .hero__cards {
+        margin-top: -298px;
+        margin-left: -680px;
+    }
+
+    .hero__img {
+        left: 100px;
+        position: relative;
+    }
+
+    .hero__img-2 {
+        right: 100px;
+        margin-top: -300px;
+        cursor: zoom-in
+    }
+
+    .hero__span {
+        max-width: 400px;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        color: #fff;
+        position: absolute;
+        left: 200px;
+        top: 178px;
+        cursor: default;
+    }
+    
+    .hero__main-card {
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        margin-top: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px 80px;
+        flex-wrap: wrap;
+
+        .hero__card {
+            cursor: pointer;
+            transition: ease-in 0.2s;
+            padding: 20px;
+
+            &:hover {
+                border: 1px solid $color-green;
+                border-radius: 20px;
+                box-shadow: inset 1px 1px 10px 5px $color-green;
+            }
+
+            &:active {
+                box-shadow: inset 1px 1px 10px 10px rgba(61, 30, 221, 1);
+                color: rgba(61, 30, 221, 1);
+            }
+        }
+
+        .hero__icpn {
+            padding-right: 50px;
+        }
+
+        .hero__h3 {
+            margin-left: 130px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .hero__spans {
+            max-width: 300px;
+            margin-left: 130px;
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-w;
+        }
+    }
+}
