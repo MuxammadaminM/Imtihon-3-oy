@@ -13,12 +13,6 @@ $color-orange: rgba(255, 206, 80, 1);
     font-style: normal;
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar {
-        width: 768px;
-    }
-}
-
 @import "./blocks/header";
 @import "./blocks/nav";
 @import "./blocks/hero";
@@ -30,3 +24,4 @@ $color-orange: rgba(255, 206, 80, 1);
 @import "./blocks/family";
 @import "./blocks/tabel";
 @import "./blocks/foto";
+@import "./blocks/footer";
